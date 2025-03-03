@@ -5,13 +5,13 @@
 class Mg < Formula
   desc "CLI tool for managing stacked PRs"
   homepage "https://github.com/mrge-io/mg-cli"
-  version "1.0.30"
+  version "1.0.31"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.30/mg_1.0.30_darwin_x86_64.tar.gz"
-      sha256 "cde7e960e206a1e95aa066a80ad0e113fdc775890601fc3c786b9061f77d99b9"
+      url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.31/mg_1.0.31_darwin_x86_64.tar.gz"
+      sha256 "83e3645c1aa94960f71b823bdb999c3087e7a77b5c4b9d3e8de937ca322c2f8f"
 
       def install
         bin.install "mg"
@@ -20,8 +20,8 @@ class Mg < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.30/mg_1.0.30_darwin_arm64.tar.gz"
-      sha256 "9d33e7991606535efae2026dbe2652b412d4e4f2818a9e7259eb0ba6a35a05da"
+      url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.31/mg_1.0.31_darwin_arm64.tar.gz"
+      sha256 "1c496386da76b39996a718051e22c4231a3e371d17c1d3ec9317f76ecc738a91"
 
       def install
         bin.install "mg"
@@ -34,8 +34,8 @@ class Mg < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.30/mg_1.0.30_linux_x86_64.tar.gz"
-        sha256 "7417d104ffeb2188071bb22e6bdc4be4b6df61190d6917f6136629c324a7ca29"
+        url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.31/mg_1.0.31_linux_x86_64.tar.gz"
+        sha256 "9566696f16432d81083d2fd770111e57c61c40d7972ad2845e5117443e1387cf"
 
         def install
           bin.install "mg"
@@ -46,8 +46,8 @@ class Mg < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.30/mg_1.0.30_linux_arm64.tar.gz"
-        sha256 "62323dd4004dc309a267a68427fa114973ba68cefd62c687a377ce1f9bf02c41"
+        url "https://github.com/mrge-io/homebrew-tap/releases/download/v1.0.31/mg_1.0.31_linux_arm64.tar.gz"
+        sha256 "0646c126d889f827c0a52c450947d65b96c303808acd16d41bec67b4c305f4e5"
 
         def install
           bin.install "mg"
